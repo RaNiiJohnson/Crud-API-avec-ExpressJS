@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "font-1";
+            src: url(./assets/fonts/JosefinSans-SemiBold.ttf);
+        }
+
+        body {
+            background: #00294c;
+            color: #ffef;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enterName {
+            font-family: "font-1";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 10px;
+            margin: 0 auto;
+            width: 500px;
+            height: 15vh;
+            background: #000022;
+            font-size: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .form {
+            position: relative;
+        }
+
+        input {
+            display: flex;
+            background-color: #011c33;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            margin: 0 auto;
+            width: 450px;
+            color: #ffef;
+            font-family: "font-1";
+            font-size: 1.5rem;
+            border-bottom: 2px solid #00294c;
+        }
+
+        input:focus,
+        input:valid {
+            border-bottom: 2px solid #ffef;
+        }
+
+        label {
+            position: absolute;
+            top: 25px;
+            left: 10px;
+        }
+
+        input:focus+label {
+            color: #000022;
+            transform: translateY(-50px);
+        }
+    </style>
+    <div class="enterName">
+        <form class="form">
+            <label for="userName">Votre nom svp.</label>
+            <input type="text" name="userName" id="userName" />
+        </form>
+    </div>
+</body>
+
+</html>
